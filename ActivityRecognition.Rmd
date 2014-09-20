@@ -79,7 +79,7 @@ library(randomForest)
 modelFit<- randomForest(classe ~ ., data=modelTraining)
 ```
 
-The [Random Forest]((http://en.wikipedia.org/wiki/Random_forest)  approach is an ensemble method that builds multiple [Classification And Regression Trees (CART)](http://en.wikipedia.org/wiki/CART) and outputs the most prevalent classification at the end of each iteration.  Each tree in the "random forest" is grown based the randomization of features when nodes are split.
+The [Random Forest](http://en.wikipedia.org/wiki/Random_forest)  approach is an ensemble method that builds multiple [Classification And Regression Trees (CART)](http://en.wikipedia.org/wiki/CART) and outputs the most prevalent classification at the end of each iteration.  Each tree in the "random forest" is grown based the randomization of features when nodes are split.
 
 The resulting [Confusion Matrix](en.wikipedia.org/wiki/Confusion_matrix) is shown below.  It shows that the Out-Of-Bag (OOB) error arising from building the model using the [Random Forest](http://en.wikipedia.org/wiki/Random_forest#History) algorithm on the training set is less than 1% for each of the five categories. The Out-Of-Bag error can be used as an estimate of [Generalization Error](http://en.wikipedia.org/wiki/Generalization_error) associated with unseen data.
 

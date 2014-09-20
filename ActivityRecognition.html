@@ -109,7 +109,7 @@ modelTesting  &lt;- data.cleaned[-inTraining,]</code></pre>
 ## Type rfNews() to see new features/changes/bug fixes.</code></pre>
 <pre class="r"><code># Use random forests to create a model
 modelFit&lt;- randomForest(classe ~ ., data=modelTraining)</code></pre>
-<p>The [Random Forest]((<a href="http://en.wikipedia.org/wiki/Random_forest">http://en.wikipedia.org/wiki/Random_forest</a>) approach is an ensemble method that builds multiple <a href="http://en.wikipedia.org/wiki/CART">Classification And Regression Trees (CART)</a> and outputs the most prevalent classification at the end of each iteration. Each tree in the “random forest” is grown based the randomization of features when nodes are split.</p>
+<p>The <a href="http://en.wikipedia.org/wiki/Random_forest">Random Forest</a> approach is an ensemble method that builds multiple <a href="http://en.wikipedia.org/wiki/CART">Classification And Regression Trees (CART)</a> and outputs the most prevalent classification at the end of each iteration. Each tree in the “random forest” is grown based the randomization of features when nodes are split.</p>
 <p>The resulting <a href="en.wikipedia.org/wiki/Confusion_matrix">Confusion Matrix</a> is shown below. It shows that the Out-Of-Bag (OOB) error arising from building the model using the <a href="http://en.wikipedia.org/wiki/Random_forest#History">Random Forest</a> algorithm on the training set is less than 1% for each of the five categories. The Out-Of-Bag error can be used as an estimate of <a href="http://en.wikipedia.org/wiki/Generalization_error">Generalization Error</a> associated with unseen data.</p>
 <pre class="r"><code>modelFit</code></pre>
 <pre><code>## 
